@@ -11,7 +11,7 @@ function watchIt([command, ...rest]) {
   appProc.stdout.on("data", data => {
     let stringifiedData = data.toString();
     process.stdout.write(stringifiedData);
-    if (stringifiedData.match(process.env.WAIT_FOR_MESSAGE)) {
+    if (stringifiedData.match(new RegExp(process.env.WAIT_FOR_MESSAGE, "i"))) {
       console.log("Restarting cypress tests!");
       const cypressWatcherId = "cypress-rerun-with-app";
       ipc.connectTo(cypressWatcherId, function() {
