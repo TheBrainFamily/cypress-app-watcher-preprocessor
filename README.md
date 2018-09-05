@@ -1,5 +1,6 @@
 This small package allows you a super-fast test-driven workflow.
 
+### App Side
 First, install it:
 
 ```bash
@@ -28,6 +29,9 @@ It can be just part of the line - in this case, no matter what port it starts at
 
 If your app is in two-part (as it usually is - frontend + backend), you can use watcher in both places, and cypress will rerun tests whenever you change either one of them.
 
+### Cypress Side
+
+Find your cypress/plugins/index.js file and change it to look like so:
 ```javascript
 const watchApp = require("cypress-app-watcher-preprocessor");
 module.exports = (on, config) => {
