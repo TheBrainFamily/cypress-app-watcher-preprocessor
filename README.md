@@ -1,5 +1,10 @@
 This small package allows you a super-fast test-driven workflow.
 
+# Show case
+![Demonstration](http://g.recordit.co/xzVUgoEdW6.gif)
+
+Take notice - the tests automatically rerun when I first save changes on the frontend, and then again when I save changes in the backend. 
+
 ### App Side
 First, install it:
 
