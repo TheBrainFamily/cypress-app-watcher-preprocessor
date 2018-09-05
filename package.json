@@ -1,6 +1,6 @@
 {
   "name": "cypress-app-watcher-preprocessor",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Rerun your cypress tests when your app restarts",
   "main": "cypressPreprocessor.js",
   "bin": {

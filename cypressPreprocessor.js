@@ -5,7 +5,7 @@ let filesToRerun = [];
 const setUpIpcServer = () => {
   ipc.config.id = "cypress-rerun-with-app";
   ipc.config.retry = 1500;
-  // ipc.config.silent = true;
+  ipc.config.silent = true;
 
   ipc.serve(function() {
     ipc.server.on("message", function(data) {
