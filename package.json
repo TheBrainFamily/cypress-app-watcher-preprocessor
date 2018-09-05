@@ -1,0 +1,20 @@
+{
+  "name": "cypress-app-watcher-preprocessor",
+  "version": "1.0.0",
+  "description": "Rerun your cypress tests when your app restarts",
+  "main": "cypressPreprocessor.js",
+  "bin": {
+    "cypressAppWatcher": "./appWatcher.js"
+  },
+  "author": "Łukasz Gandecki <lgandecki@thebrain.pro>",
+  "license": "ISC",
+  "dependencies": {
+    "@cypress/browserify-preprocessor": "^1.1.0",
+    "node-ipc": "^9.1.1"
+  },
+  "keywords": [
+    "cypress",
+    "cypress-plugin",
+    "cypress-preprocessor"
+  ]
+}
