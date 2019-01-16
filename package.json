@@ -1,6 +1,6 @@
 {
   "name": "cypress-app-watcher-preprocessor",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Rerun your cypress tests when your app restarts",
   "main": "cypressPreprocessor.js",
   "bin": {
@@ -16,5 +16,9 @@
     "cypress",
     "cypress-plugin",
     "cypress-preprocessor"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+github.com/TheBrainFamily/cypress-app-watcher-preprocessor.git"
+  }
 }
